@@ -2,11 +2,10 @@ import os
 
 import openai
 from flask import Flask, redirect, render_template, request, url_for
-import jsonify
 import json
 
 app = Flask(__name__)
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 @app.route("/", methods=("GET", "POST"))
