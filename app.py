@@ -5,7 +5,7 @@ from flask import Flask, redirect, render_template, request, url_for
 import json
 
 app = Flask(__name__)
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 @app.route("/", methods=("GET", "POST"))
