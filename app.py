@@ -46,7 +46,11 @@ def welcome():
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=generate_prompt_text(prompt_text),
-        temperature=0.6,
+        temperature=0.5,
+        max_tokens=60,
+        top_p=1.0,
+        frequency_penalty=0.0,
+        presence_penalty=0.0
     )
     gpt_response = response['choices'][0]['text']
     dict_text = {"text": gpt_response}
